@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      run: mkdir css
+        run: mkdir css
 
       - name: Sass Build
         uses: gha-utilities/sass-build@v0.3.7
