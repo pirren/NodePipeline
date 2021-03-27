@@ -14,7 +14,6 @@ jobs:
       - name: Checkout source Git branch
         uses: actions/checkout@v2
       
-
       - name: Use Node.js 2.1.5
         uses: actions/setup-node@v2.1.5
 
@@ -24,8 +23,8 @@ jobs:
       - name: Compile sass
         run: npm run sass
 
-      - name: Make destination directory for compiled CSS
-        run: mkdir css
+      # - name: Make destination directory for compiled CSS
+      #   run: mkdir css
 
       # - name: Sass Build
       #   uses: gha-utilities/sass-build@v0.3.7
@@ -33,8 +32,8 @@ jobs:
       #     source: scss/style.scss
       #     destination: /tmp/repo-name/assets/css/style.css
 
-      - name: Checkout destination Git branch
-        uses: actions/checkout@v2
+      # - name: Checkout destination Git branch
+      #   uses: actions/checkout@v2
 
       # - name: Move compiled CSS to path within master branch
       #   run: mv /tmp/repo-name/assets/css css/
